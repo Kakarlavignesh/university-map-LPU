@@ -22,7 +22,8 @@ L.Icon.Default.mergeOptions({
 // We will use standard Leaflet dynamic styling instead of external images
 // to ensure 100% visibility and zero "blank page" issues.
 
-const API_BASE = 'http://localhost:8081/api/map'
+// Use your local IP so other devices on the network can connect to the backend
+const API_BASE = 'http://172.26.83.216:8081/api/map'
 
 function MapEffect({ center }) {
     const map = useMap()
