@@ -1,0 +1,362 @@
+:root {
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --bg: #0f172a;
+  --sidebar-bg: #1e293b;
+  --text: #f8fafc;
+  --error: #ef4444;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: var(--sidebar-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 15000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app-header h1 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin: 0;
+}
+
+.status-badge {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.fatal-error-header {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: var(--error);
+  color: white;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 20000;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--primary);
+  z-index: 10000;
+  gap: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 60px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 350px;
+  background: var(--sidebar-bg);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.logo {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.search-section {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+select {
+  background: #0f172a;
+  color: white;
+  border: 1px solid #334155;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+select:focus {
+  border-color: var(--primary);
+}
+
+.divider {
+  font-size: 0.75rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.options-grid.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.option-card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  padding: 0.75rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option-card:hover {
+  border-color: #475569;
+}
+
+.option-card.active {
+  border-color: var(--primary);
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--primary);
+}
+
+.option-card span {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.route-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background 0.2s;
+}
+
+.route-btn:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.route-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.reset-btn {
+  background: transparent;
+  color: #94a3b8;
+  border: 1px solid #334155;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.route-info {
+  padding: 1.5rem;
+  background: rgba(59, 130, 246, 0.05);
+  border-top: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+/* Custom Popups */
+.custom-popup .leaflet-popup-content-wrapper {
+  background: #1e293b;
+  color: #f8fafc;
+  border-radius: 12px;
+  padding: 0;
+}
+
+.custom-popup .leaflet-popup-tip {
+  background: #1e293b;
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-bottom: 2px solid;
+  margin-bottom: 8px;
+}
+
+.type-badge {
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.popup-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 8px;
+}
+
+.popup-actions button {
+  font-size: 11px;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.start-btn {
+  background: #10b981;
+  color: white;
+}
+
+.end-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.start-btn:hover {
+  background: #059669;
+}
+
+.end-btn:hover {
+  background: #2563eb;
+}
+
+/* Tooltip Styling */
+.leaflet-tooltip {
+  background: rgba(15, 23, 42, 0.9) !important;
+  color: #fff !important;
+  border: 1px solid rgba(59, 130, 246, 0.5) !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3) !important;
+  padding: 4px 10px !important;
+}
+
+.leaflet-tooltip-top:before {
+  border-top-color: rgba(59, 130, 246, 0.5) !important;
+}
+
+.start-label {
+  color: #10b981 !important;
+  font-weight: 700 !important;
+}
+
+.end-label {
+  color: #ef4444 !important;
+  font-weight: 700 !important;
+}
+
+.leaflet-tooltip.permanent {
+  border-width: 2px !important;
+}
+
+/* Map Wrapper */
+.map-wrapper {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  background: #0f172a;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-msg {
+  padding: 1rem;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  margin: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+}

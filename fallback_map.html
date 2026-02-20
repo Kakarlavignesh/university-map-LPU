@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniMap Pro - Portable Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+        }
+
+        .sidebar {
+            background: #1e293b;
+            width: 380px;
+            height: 100vh;
+            overflow-y: auto;
+            z-index: 1000;
+            position: relative;
+        }
+
+        #map {
+            height: 100vh;
+            flex: 1;
+        }
+
+        .leaflet-container {
+            filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+        }
+    </style>
+</head>
+
+<body class="flex overflow-hidden">
+
+    <!-- Sidebar -->
+    <div class="sidebar p-8 shadow-2xl border-r border-slate-700">
+        <div class="flex items-center gap-3 text-blue-500 font-bold text-2xl mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            <span>UniMap Pro</span>
+        </div>
+
+        <div class="space-y-6">
+            <div>
+                <label class="block text-slate-400 text-sm font-medium mb-2">Starting Point</label>
+                <select id="start"
+                    class="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-white focus:border-blue-500 outline-none">
+                    <option value="">Select Building</option>
+                    <option value="1">Administrative Building</option>
+                    <option value="2">Faculty of Engineering</option>
+                    <option value="3">Central Library</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-slate-400 text-sm font-medium mb-2">Destination</label>
+                <select id="end"
+                    class="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-white focus:border-blue-500 outline-none">
+                    <option value="">Select Building</option>
+                    <option value="1">Administrative Building</option>
+                    <option value="2">Faculty of Engineering</option>
+                    <option value="3">Central Library</option>
+                </select>
+            </div>
+
+            <button onclick="calculateRoute()"
+                class="w-full bg-blue-600 hover:bg-blue-700 p-4 rounded-xl font-bold transition transform active:scale-95 shadow-lg shadow-blue-500/20">
+                Find Optimal Path
+            </button>
+        </div>
+
+        <div class="mt-12 bg-slate-900/50 p-6 rounded-2xl border border-slate-700/50">
+            <h3 class="text-sm font-bold text-blue-400 uppercase tracking-widest mb-4">Instructions</h3>
+            <ul class="text-slate-400 text-sm space-y-3">
+                <li class="flex gap-2"><span>1.</span> Select buildings from the list or click icons on the map.</li>
+                <li class="flex gap-2"><span>2.</span> The system calculates the shortest path using A*.</li>
+                <li class="flex gap-2"><span>3.</span> Check the backend logs for algorithm performance metrics.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Map Area -->
+    <div id="map"></div>
+
+    <script>
+        const map = L.map('map').setView([23.8103, 90.4125], 16);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+        const buildings = [
+            { id: 1, name: "Admin Building", pos: [23.8103, 90.4125] },
+            { id: 2, name: "Engineering", pos: [23.8115, 90.4135] },
+            { id: 3, name: "Library", pos: [23.8095, 90.4115] }
+        ];
+
+        buildings.forEach(b => {
+            L.marker(b.pos).addTo(map).bindPopup(`<b>${b.name}</b>`);
+        });
+
+        function calculateRoute() {
+            const start = document.getElementById('start').value;
+            const end = document.getElementById('end').value;
+            if (!start || !end) return alert("Please select both source and destination.");
+
+            // Mock route for portable preview
+            const latlngs = buildings.filter(b => b.id == start || b.id == end).map(b => b.pos);
+            const polyline = L.polyline(latlngs, { color: '#3b82f6', weight: 5, dashArray: '10, 10' }).addTo(map);
+            map.fitBounds(polyline.getBounds());
+        }
+    </script>
+</body>
+
+</html>
