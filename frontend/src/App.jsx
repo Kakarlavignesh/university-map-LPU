@@ -49,11 +49,23 @@ function App() {
 
     const fetchBuildings = async () => {
         try {
-            const res = await axios.get(`${API_BASE}/buildings`)
+            // First try live backend
+            console.log("Attempting to connect to live backend at:", API_BASE);
+            const res = await axios.get(`${API_BASE}/buildings`, { timeout: 3000 })
             setBuildings(res.data)
+            setError(null)
+            console.log("Connected to Live Backend successfully.");
         } catch (err) {
-            console.error("Failed to fetch buildings", err)
-            setError("Server connection failed. Make sure backend is running.")
+            console.warn("Live backend connection failed. Falling back to local data.", err);
+            try {
+                // Fallback to local public file for Netlify/External access
+                const fallbackRes = await axios.get('/buildings_data.json')
+                setBuildings(fallbackRes.data)
+                setError("Note: Running in 'Offline/Preview' mode. Route calculation requires local server.")
+            } catch (fallbackErr) {
+                console.error("Critical: Could not load local fallback data.", fallbackErr)
+                setError("Server connection failed and offline data missing. Make sure backend is running.")
+            }
         }
     }
 

@@ -1,0 +1,635 @@
+﻿{
+    "value":  [
+                  {
+                      "id":  1,
+                      "name":  "BH1",
+                      "type":  "HOSTEL",
+                      "latitude":  23.8126,
+                      "longitude":  90.41,
+                      "description":  "Boys Hostel 1",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  2,
+                      "name":  "BH2",
+                      "type":  "HOSTEL",
+                      "latitude":  23.813200000000002,
+                      "longitude":  90.41,
+                      "description":  "Boys Hostel 2",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  3,
+                      "name":  "BH3",
+                      "type":  "HOSTEL",
+                      "latitude":  23.8138,
+                      "longitude":  90.41,
+                      "description":  "Boys Hostel 3",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  4,
+                      "name":  "BH4",
+                      "type":  "HOSTEL",
+                      "latitude":  23.814400000000003,
+                      "longitude":  90.41,
+                      "description":  "Boys Hostel 4",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  5,
+                      "name":  "BH5",
+                      "type":  "HOSTEL",
+                      "latitude":  23.815,
+                      "longitude":  90.41,
+                      "description":  "Boys Hostel 5",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  6,
+                      "name":  "BH6",
+                      "type":  "HOSTEL",
+                      "latitude":  23.8156,
+                      "longitude":  90.41,
+                      "description":  "Boys Hostel 6",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  7,
+                      "name":  "BH7",
+                      "type":  "HOSTEL",
+                      "latitude":  23.816200000000002,
+                      "longitude":  90.41,
+                      "description":  "Boys Hostel 7",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  8,
+                      "name":  "BH8",
+                      "type":  "HOSTEL",
+                      "latitude":  23.8168,
+                      "longitude":  90.41,
+                      "description":  "Boys Hostel 8",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  9,
+                      "name":  "BH9",
+                      "type":  "HOSTEL",
+                      "latitude":  23.817400000000003,
+                      "longitude":  90.41,
+                      "description":  "Boys Hostel 9",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  10,
+                      "name":  "BH10",
+                      "type":  "HOSTEL",
+                      "latitude":  23.818,
+                      "longitude":  90.41,
+                      "description":  "Boys Hostel 10",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  11,
+                      "name":  "GH1",
+                      "type":  "HOSTEL",
+                      "latitude":  23.8044,
+                      "longitude":  90.41,
+                      "description":  "Girls Hostel 1",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  12,
+                      "name":  "GH2",
+                      "type":  "HOSTEL",
+                      "latitude":  23.8038,
+                      "longitude":  90.41,
+                      "description":  "Girls Hostel 2",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  13,
+                      "name":  "GH3",
+                      "type":  "HOSTEL",
+                      "latitude":  23.8032,
+                      "longitude":  90.41,
+                      "description":  "Girls Hostel 3",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  14,
+                      "name":  "GH4",
+                      "type":  "HOSTEL",
+                      "latitude":  23.802599999999998,
+                      "longitude":  90.41,
+                      "description":  "Girls Hostel 4",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  15,
+                      "name":  "GH5",
+                      "type":  "HOSTEL",
+                      "latitude":  23.802,
+                      "longitude":  90.41,
+                      "description":  "Girls Hostel 5",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  16,
+                      "name":  "GH6",
+                      "type":  "HOSTEL",
+                      "latitude":  23.8014,
+                      "longitude":  90.41,
+                      "description":  "Girls Hostel 6",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  17,
+                      "name":  "GH7",
+                      "type":  "HOSTEL",
+                      "latitude":  23.8008,
+                      "longitude":  90.41,
+                      "description":  "Girls Hostel 7",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  18,
+                      "name":  "GH8",
+                      "type":  "HOSTEL",
+                      "latitude":  23.8002,
+                      "longitude":  90.41,
+                      "description":  "Girls Hostel 8",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  19,
+                      "name":  "Main Gate",
+                      "type":  "GATE",
+                      "latitude":  23.81,
+                      "longitude":  90.405,
+                      "description":  "Entrance to university",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  20,
+                      "name":  "Hospital",
+                      "type":  "SERVICE",
+                      "latitude":  23.811,
+                      "longitude":  90.415,
+                      "description":  "University Hospital",
+                      "isEmergencyHub":  true
+                  },
+                  {
+                      "id":  21,
+                      "name":  "Library",
+                      "type":  "SERVICE",
+                      "latitude":  23.81,
+                      "longitude":  90.412,
+                      "description":  "Central Library",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  22,
+                      "name":  "Admin Block",
+                      "type":  "SERVICE",
+                      "latitude":  23.809,
+                      "longitude":  90.4125,
+                      "description":  "Administration",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  23,
+                      "name":  "Cafeteria",
+                      "type":  "SERVICE",
+                      "latitude":  23.8105,
+                      "longitude":  90.411,
+                      "description":  "Main dining area",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  24,
+                      "name":  "Playground",
+                      "type":  "SERVICE",
+                      "latitude":  23.819,
+                      "longitude":  90.409,
+                      "description":  "Backside Playground",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  25,
+                      "name":  "Box Cricket",
+                      "type":  "SERVICE",
+                      "latitude":  23.8115,
+                      "longitude":  90.4155,
+                      "description":  "Hospital Side Cricket Ground",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  26,
+                      "name":  "Stall 1",
+                      "type":  "SERVICE",
+                      "latitude":  23.812,
+                      "longitude":  90.4115,
+                      "description":  "Food Stall 1",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  27,
+                      "name":  "Stall 2",
+                      "type":  "SERVICE",
+                      "latitude":  23.813,
+                      "longitude":  90.411,
+                      "description":  "Food Stall 2",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  28,
+                      "name":  "Stall 3",
+                      "type":  "SERVICE",
+                      "latitude":  23.814,
+                      "longitude":  90.41050000000001,
+                      "description":  "Food Stall 3",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  29,
+                      "name":  "Stall 4",
+                      "type":  "SERVICE",
+                      "latitude":  23.815,
+                      "longitude":  90.41000000000001,
+                      "description":  "Food Stall 4",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  30,
+                      "name":  "Stall 5",
+                      "type":  "SERVICE",
+                      "latitude":  23.816,
+                      "longitude":  90.40950000000001,
+                      "description":  "Food Stall 5",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  31,
+                      "name":  "Block 1",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8153,
+                      "longitude":  90.4141,
+                      "description":  "Departmental Block 1",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  32,
+                      "name":  "Block 2",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8156,
+                      "longitude":  90.41420000000001,
+                      "description":  "Departmental Block 2",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  33,
+                      "name":  "Block 3",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.815900000000003,
+                      "longitude":  90.4143,
+                      "description":  "Departmental Block 3",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  34,
+                      "name":  "Block 4",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.816200000000002,
+                      "longitude":  90.4144,
+                      "description":  "Departmental Block 4",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  35,
+                      "name":  "Block 5",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8165,
+                      "longitude":  90.4145,
+                      "description":  "Departmental Block 5",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  36,
+                      "name":  "Block 6",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8168,
+                      "longitude":  90.41460000000001,
+                      "description":  "Departmental Block 6",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  37,
+                      "name":  "Block 7",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8171,
+                      "longitude":  90.4147,
+                      "description":  "Departmental Block 7",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  38,
+                      "name":  "Block 8",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.817400000000003,
+                      "longitude":  90.4148,
+                      "description":  "Departmental Block 8",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  39,
+                      "name":  "Block 9",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.817700000000002,
+                      "longitude":  90.4149,
+                      "description":  "Departmental Block 9",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  40,
+                      "name":  "Block 10",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.818,
+                      "longitude":  90.415,
+                      "description":  "Departmental Block 10",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  41,
+                      "name":  "Block 11",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8183,
+                      "longitude":  90.4151,
+                      "description":  "Departmental Block 11",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  42,
+                      "name":  "Block 12",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8186,
+                      "longitude":  90.4152,
+                      "description":  "Departmental Block 12",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  43,
+                      "name":  "Block 13",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.818900000000003,
+                      "longitude":  90.4153,
+                      "description":  "Departmental Block 13",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  44,
+                      "name":  "Block 14",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.819200000000002,
+                      "longitude":  90.4154,
+                      "description":  "Departmental Block 14",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  45,
+                      "name":  "Block 15",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8195,
+                      "longitude":  90.4155,
+                      "description":  "Departmental Block 15",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  46,
+                      "name":  "Block 16",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8198,
+                      "longitude":  90.4156,
+                      "description":  "Departmental Block 16",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  47,
+                      "name":  "Block 17",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8201,
+                      "longitude":  90.4157,
+                      "description":  "Departmental Block 17",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  48,
+                      "name":  "Block 18",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.820400000000003,
+                      "longitude":  90.4158,
+                      "description":  "Departmental Block 18",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  49,
+                      "name":  "Block 19",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.820700000000002,
+                      "longitude":  90.41590000000001,
+                      "description":  "Departmental Block 19",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  50,
+                      "name":  "Block 20",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.821,
+                      "longitude":  90.416,
+                      "description":  "Departmental Block 20",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  51,
+                      "name":  "Block 21",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8213,
+                      "longitude":  90.4161,
+                      "description":  "Departmental Block 21",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  52,
+                      "name":  "Block 22",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8216,
+                      "longitude":  90.4162,
+                      "description":  "Departmental Block 22",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  53,
+                      "name":  "Block 23",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.821900000000003,
+                      "longitude":  90.4163,
+                      "description":  "Departmental Block 23",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  54,
+                      "name":  "Block 24",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.822200000000002,
+                      "longitude":  90.4164,
+                      "description":  "Departmental Block 24",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  55,
+                      "name":  "Block 25",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.82,
+                      "longitude":  90.42,
+                      "description":  "Departmental Block 25",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  56,
+                      "name":  "Block 26",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8201,
+                      "longitude":  90.42005,
+                      "description":  "Departmental Block 26",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  57,
+                      "name":  "Block 27",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8202,
+                      "longitude":  90.4201,
+                      "description":  "Departmental Block 27",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  58,
+                      "name":  "Block 28",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8203,
+                      "longitude":  90.42015,
+                      "description":  "Departmental Block 28",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  59,
+                      "name":  "Block 29",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8204,
+                      "longitude":  90.42020000000001,
+                      "description":  "Departmental Block 29",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  60,
+                      "name":  "Block 30",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8205,
+                      "longitude":  90.42025,
+                      "description":  "Departmental Block 30",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  61,
+                      "name":  "Block 31",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8206,
+                      "longitude":  90.4203,
+                      "description":  "Departmental Block 31",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  62,
+                      "name":  "Block 32",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8207,
+                      "longitude":  90.42035,
+                      "description":  "Departmental Block 32",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  63,
+                      "name":  "Block 33",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.820800000000002,
+                      "longitude":  90.4204,
+                      "description":  "Departmental Block 33",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  64,
+                      "name":  "Block 34",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8209,
+                      "longitude":  90.42045,
+                      "description":  "Departmental Block 34",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  65,
+                      "name":  "Block 35",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.821,
+                      "longitude":  90.4205,
+                      "description":  "Departmental Block 35",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  66,
+                      "name":  "Block 36",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8211,
+                      "longitude":  90.42055,
+                      "description":  "Departmental Block 36",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  67,
+                      "name":  "Block 37",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8212,
+                      "longitude":  90.42060000000001,
+                      "description":  "Departmental Block 37",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  68,
+                      "name":  "Block 38",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.8213,
+                      "longitude":  90.42065,
+                      "description":  "Departmental Block 38",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  69,
+                      "name":  "Block 39",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.826700000000002,
+                      "longitude":  90.4179,
+                      "description":  "Departmental Block 39",
+                      "isEmergencyHub":  false
+                  },
+                  {
+                      "id":  70,
+                      "name":  "Block 40",
+                      "type":  "ACADEMIC",
+                      "latitude":  23.827,
+                      "longitude":  90.418,
+                      "description":  "Departmental Block 40",
+                      "isEmergencyHub":  false
+                  }
+              ],
+    "Count":  70
+}
